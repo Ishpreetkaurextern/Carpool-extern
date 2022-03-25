@@ -1,0 +1,311 @@
+
+
+.navbar-brand{
+    position: absolute;
+width: 148px;
+height: 45px;
+left: 485px;
+top: 66px;
+
+font-family: Lobster;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 45px;
+color: white;
+}
+#home{
+    position: absolute;
+    width: 56px;
+    height: 24px;
+    left: 778px;
+    top: 77px;
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: white;
+}
+#about{
+    position: absolute;
+    width: 106px;
+    height: 24px;
+    left: 931px;
+    top: 77px;
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: white;
+}
+#Contact{
+    position: absolute;
+    width: 120px;
+    height: 24px;
+    left: 1113px;
+    top: 77px;
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: white;
+}
+#fpr{
+    position: absolute;
+    width: 148px;
+    height: 24px;
+    left: 1311px;
+    top: 77px;
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: white;
+    
+}
+.bg-light {
+    --bs-bg-opacity: 0; 
+   
+
+}
+.body{
+    background-image: url(../../assets/images/b.png);
+    position: absolute;
+width: 1903px;
+height: 1300px;
+left: 0px;
+top: 0px;
+}
+#loginform{
+    position: absolute;
+width: 453px;
+height: 675px;
+left: 733px;
+top: 274px;
+background: #FFFFFF;
+box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.05);
+border-radius: 20px;
+}
+#labelname{
+    position: absolute;
+width: 100px;
+height: 19.5px;
+left:66px;
+top: 252px;
+
+font-family: Barlow;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 140%;
+
+color: #2D3748;
+
+}
+#labelpass{
+    position: absolute;
+    width: 100px;
+    height: 19.5px;
+    left:66px;
+    top: 362px;
+
+font-family: Barlow;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 140%;
+color: #2D3748;
+}
+#fname{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 20px;
+    width: 326px;
+    height: 53px;
+    position: absolute;
+    left: 63px;
+    right: 100px;
+    top: 284px;
+    bottom: 60px;
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    box-sizing: border-box;
+    border-radius: 8px
+}
+#pwd{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 20px;
+    height: 55px;
+    width: 330px;
+    position: absolute;
+    left: 62px;
+    right: 128px;
+    top: 395px;
+    bottom: 40pxpx;
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    box-sizing: border-box;
+    border-radius: 8px
+}
+#signin{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 8px;
+    position: absolute;
+    left: 59.89px;
+    right: 46.89px;
+    top: 52.19px;
+    top: 540px;
+    height: 45px;
+    width: 330px;
+    background: #0094FF;
+    border-radius: 8px;
+    color: white;
+    
+}
+#loginform h1{
+    position: absolute;
+    width: 113.5px;
+    height: 25px;
+    left: 161px;
+    top: 56.5px;
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 140%;
+    text-align: center;
+    color: #263238
+}
+#facebook{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    left: 103.5px;
+    top: 108.5px;
+    background-image: url(../../assets/images/Facebook.png);
+}
+#apple{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    left: 183.5px;
+    top: 108.5px;
+    background-image: url(../../assets/images/Apple.png);
+}
+#google{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    left: 262.5px;
+    top: 107.5px;
+    background-image: url(../../assets/images/Google.png);
+}
+#or{
+    position: absolute;
+    width: 18.5px;
+    height: 25px;
+    left: 207.5px;
+    top: 202px;
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 140%;
+    text-align: center;
+    color: #A0AEC0;
+}
+#signup{
+    color: #0094FF;
+}
+#Signline{
+   position: absolute;
+    width: 213px;
+    height: 19.5px;
+    left: 112.5px;
+    top: 619.5px;
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: center;
+    color: #A0AEC0;
+}
+#toggle{
+    display: none;
+}
+.switch label{
+    position: relative;
+    display: block;
+    width: 43px;
+    height: 20px;
+    background: #888;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 300ms linear;
+    top: 430px;
+    right: -62px;
+}
+
+
+
+.switch label:before{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 2px;
+    content: "";
+    display: block;
+    width: 19px;
+    height: 15px;
+    background: white;
+    border-radius: 50%;
+    transition: left 300ms linear;
+}
+
+#toggle:checked+label{
+    background: #0094FF;
+}
+#toggle:checked+label:before{
+    left:22px;
+}
+#text{
+    position: absolute;
+width: 79.5px;
+height: 18px;
+left:130px;
+top: 480px;
+
+font-family: Barlow;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 150%;
+/* identical to box height, or 18px */
+
+
+/* Gray/Gray-700 */
+
+color: #2D3748;
+
+}
+#pname{
+padding-top: 337px;
+  font-size: smaller;
+  padding-left: 266px;  
+}
+#ppwd{
+    padding-top: 430px;
+  font-size: smaller;
+  padding-left: 266px;
+}

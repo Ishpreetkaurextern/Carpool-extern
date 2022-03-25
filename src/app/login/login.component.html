@@ -1,0 +1,75 @@
+
+<div class="body">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    
+    <a class="navbar-brand" routerLink="/main">RideShare</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" id="home" routerLink="/main">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="about" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="Contact" href="#">Contact Us</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="fpr" href="#">Offer Ride</a>
+          </li>
+        
+      </ul>
+    </div>
+  </nav>
+
+  <div *ngIf="!loggedin" id="loginform">
+
+
+
+    <div  class="gform" >
+      <h1>Sign in with</h1>
+      <div>
+        <button (click)="signinwithfacebook()" img id="facebook"  alt=""></button> 
+     </div>
+     <div>
+      <button img id="apple"  alt=""></button> 
+    </div>
+    <div>
+    <button (click)="signinwithgoogle()" img id="google"  alt=""></button>
+    </div> 
+    </div>  
+
+
+
+    
+<p id="or">or</p>
+  <form id="mform" [formGroup]="loginForm" (ngSubmit)="loginUser()">
+    <label id="labelname" for="name">First name:</label>
+    <input  type="text" id="fname" name="users" placeholder="Your full name"  formControlName="users">
+    <p id="pname" style="color:  #0094FF;"  *ngIf="users && users.invalid && users.touched">This field is not valid</p>
+    <br>
+    <label id="labelpass" for="pwd">Password:</label>
+    <input  type="password" id="pwd" name="password" placeholder="Your password" formControlName="password">
+    <p id="ppwd" style="color: #0094FF;"  *ngIf="password && password.invalid && password.touched">This field is not valid</p>
+    <br>
+    <div class="switch">
+      <input id="toggle" type="checkbox" ngModel>
+      <label id="Rme" for="toggle"></label>
+      </div>
+   <p id="text">Remember me</p>
+  
+    <input [disabled]="loginForm.invalid" id="signin" type="submit" value="Sign in">
+    <p id="Signline">Don’t have an account?<a id="signup" routerLink="/register"> Sign up </a></p>
+  </form>
+</div>
+   
+</div>
+
+<div *ngIf="loggedin">
+<img src="{{user.photoUrl}}" alt="">
+<h1>{{user.name}}</h1>
+<p>{{user.email}}</p>
+</div>

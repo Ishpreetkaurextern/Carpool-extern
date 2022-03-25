@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ngbCarouselTransitionOut } from '@ng-bootstrap/ng-bootstrap/carousel/carousel-transition';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,20 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'carpoolapp';
+  _freeApiService: any;
+  
+  constructor()
+   {
+    
+
+
+    
+   
+  }
+  ngOnInit(){
+    
+  }
+ 
 }
+
+

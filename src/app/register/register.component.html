@@ -1,0 +1,70 @@
+<div id="register">
+<div class="body">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        
+        <a class="navbar-brand" routerLink="/main">RideShare</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" id="home" routerLink="/main">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="about" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="Contact" href="#">Contact Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="fpr" href="#">Offer Ride</a>
+              </li>
+            
+          </ul>
+        </div>
+      </nav>
+      <div class="title">
+        <p id="welcome">Welcome</p>
+        <p id="para">Use these awesome forms to login or create new <br>account in your project for free.</p>
+      </div>
+      <div id="loginform">
+        <h1>Register with</h1>
+        <div>
+          <a><img id="facebook" src="../../assets/images/Facebook.png" alt=""></a> 
+       </div>
+       <div>
+        <a><img id="apple" src="../../assets/images/Apple.png" alt=""></a> 
+     </div>
+     <div>
+      <a><img id="google" src="../../assets/images/Google.png" alt=""></a>
+    </div>
+    <p id="or">or</p>
+      <form class="Rform" id="mform" [formGroup]="registerform" (ngSubmit)="registerUser()">
+        <label id="labelname" for="name">First name:</label>
+        <input  type="text" id="fname" name="fname" placeholder="Your full name" formControlName="fname">
+        <br>
+        <p id="pname" style="color:  #0094FF;"  *ngIf="fname && fname.invalid && fname.touched">This field is not valid</p>
+        <br>
+        <label id="labelmail" for="email">Email:</label>
+        <input  type="email" id="email" name="email" placeholder="Your email address" formControlName="email">
+        <br>
+        <p id="pemail" style="color:  #0094FF;"  *ngIf="email && email.invalid && email.touched">This field is not valid</p>
+        <br>
+        <label id="labelpass" for="pwd">Password:</label>
+        <input  type="password" id="pwd" name="pwd" placeholder="Your password" formControlName="pwd">
+        <br>
+        <p id="ppwd" style="color:  #0094FF;"  *ngIf="pwd && pwd.invalid && pwd.touched">This field is not valid</p>
+        <br>
+       <div class="switch">
+          <input id="toggle" type="checkbox">
+          <label id="Rme" for="toggle"></label>
+          </div>
+       <p id="text">Remember me</p>
+        <input id="signin" type="submit" value="Sign up">
+        <p id="Signline">Already have an account?<a routerLink="/login" id="signup"> Sign in</a></p>
+      </form>
+    </div>
+    </div>
+  </div>
+    
